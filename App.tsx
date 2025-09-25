@@ -51,7 +51,7 @@ const pcmToWavUrl = (base64Pcm: string): string => {
 
     new Uint8Array(buffer, 44).set(pcmBytes);
 
-    const blob = new Blob([view], { type: 'audio/wav' });
+    const blob = new Blob([buffer], { type: 'audio/wav' });
     return URL.createObjectURL(blob);
 };
 

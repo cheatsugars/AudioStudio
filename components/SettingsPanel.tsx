@@ -65,7 +65,7 @@ export const SettingsPanel: React.FC<SettingsPanelProps> = ({ speakers, onAddSpe
             <div>
                 <label className="text-base md:text-lg font-medium text-gray-400">Model</label>
                  <select className="w-full mt-1 bg-zinc-700 border border-zinc-600 rounded-md p-2 text-base md:text-lg text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                    <option>Gemini 2.5 Pro Preview TTS</option>
+                    <option>Cheat Generative Audio Pro</option>
                 </select>
             </div>
             
@@ -140,7 +140,7 @@ export const SettingsPanel: React.FC<SettingsPanelProps> = ({ speakers, onAddSpe
                         </div>
                     )}
                     {!isLoading && !error && audioSrc && (
-                        <audio controls src={audioSrc} className="w-full h-10" />
+                        <audio controls playsInline src={audioSrc} className="w-full h-10" />
                     )}
                     {!isLoading && !error && !audioSrc && (
                         <p className="text-base md:text-lg text-zinc-500">
