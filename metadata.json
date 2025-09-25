@@ -1,0 +1,5 @@
+{
+  "name": "Gemini 2.5 Pro Preview TTS",
+  "description": "A faithful clone of the Google AI Studio's Gemini 2.5 Pro Text-to-Speech interface, built with React and Tailwind CSS. Features a dynamic multi-speaker script builder.",
+  "requestFramePermissions": []
+}
